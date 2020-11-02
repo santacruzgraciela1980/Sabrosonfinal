@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(110, 110, 108);
+}
+.container_registro{
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    
+}
+.container_registro input{
+    margin: 10px 10px 10px 10px;
+    transition: 0.2s;
+
+}
+select{
+    width: 200px;
+}
+.container_registro input[type="text"]{
+    width: 200px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+   
+  
+}
+.container_registro input[type="password"]{
+    width: 200px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    
+   
+  
+}
+.container_registro input[type="number"]{
+    width: 200px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+   
+  
+}
+.container_registro input:focus{
+    width: 230px;
+}
+
+#enviar{
+    width: 240px;
+}
+#mensajeformu{
+    font-style: italic;
+    color: rgb(199, 199, 199);
+}
+#volver{
+    font-size: 25px;
+}

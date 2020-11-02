@@ -1,0 +1,1 @@
+function cambiar(){window.location="interfaces/carrito.php";}

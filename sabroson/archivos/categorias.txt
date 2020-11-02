@@ -1,0 +1,6 @@
+1|combos
+2|pizzas
+3|empanadas
+4|hamburguesas
+5|bebidas
+6|postres

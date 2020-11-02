@@ -1,0 +1,95 @@
+
+function iniciar(){
+    document.getElementById("nombre").addEventListener("change",function(){
+        var nombre=document.getElementById("nombre").value
+        if(nombre==""){
+            document.getElementById("nombre").style.borderColor="red"
+            return false;
+        }
+        else if(nombre.length<3){
+            document.getElementById("nombre").style.borderColor="red"
+            return false
+        }
+        document.getElementById("nombre").style.borderColor="green";
+        return false
+    })
+    document.getElementById("telefono").addEventListener("change",function(){
+        var telefono=document.getElementById("telefono").value
+        if(telefono==""){
+            document.getElementById("telefono").style.borderColor="red"
+            return false;
+        }
+        else if(telefono.length<3){
+            document.getElementById("telefono").style.borderColor="red"
+            return false
+        }
+        document.getElementById("telefono").style.borderColor="green";
+        return false
+    })
+    document.getElementById("mail").addEventListener("change",function(){
+        var mail=document.getElementById("mail").value
+        if(mail==""){
+            document.getElementById("mail").style.borderColor="red"
+            return false;
+        }
+        else if(mail.length<3){
+            document.getElementById("mail").style.borderColor="red"
+            return false
+        }
+        document.getElementById("mail").style.borderColor="green";
+        return false
+    })
+    document.getElementById("pass").addEventListener("change",function(){
+        var pass=document.getElementById("pass").value
+        if(pass==""){
+            document.getElementById("pass").style.borderColor="red"
+            return false;
+        }
+        else if(pass.length<6){
+            document.getElementById("pass").style.borderColor="red"
+            document.getElementById("error").style.color="red"
+            document.getElementById("error").innerHTML="*La contraseña debe contener al menos 6 caracteres"
+            return false
+        }
+        document.getElementById("pass").style.borderColor="green";
+        document.getElementById("error").innerHTML=""
+        return false
+    })
+    document.getElementById("confirmar").addEventListener("change",function(){
+        var pass=document.getElementById("pass").value
+        var confirmar=document.getElementById("confirmar").value
+        if(confirmar.length<6){
+            document.getElementById("pass").style.borderColor="red"
+            document.getElementById("confirmar").style.borderColor="red"
+            document.getElementById("error").style.color="red"
+            document.getElementById("error").innerHTML="*La contraseña debe contener al menos 6 caracteres"
+            return false
+
+        }
+        if(pass!=confirmar){
+            document.getElementById("pass").style.borderColor="red"
+            document.getElementById("confirmar").style.borderColor="red"
+            document.getElementById("error").style.color="red"
+            document.getElementById("error").innerHTML="*Las contraseñas no coinciden"
+            return false
+    
+        }
+        document.getElementById("confirmar").style.borderColor="green";
+        document.getElementById("pass").style.borderColor="green";
+        document.getElementById("error").innerHTML=""
+        return false
+    })
+    document.getElementById("direccion").addEventListener("change",function(){
+        var direccion=document.getElementById("direccion").value
+        if(direccion==""){
+            document.getElementById("direccion").style.borderColor="red"
+            return false;
+        }
+        else if(direccion.length<6){
+            document.getElementById("direccion").style.borderColor="red"
+            return false
+        }
+        document.getElementById("direccion").style.borderColor="green";
+        return false
+    })
+}
